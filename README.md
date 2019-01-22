@@ -1,2 +1,2 @@
 # Canvas
-canvas-resize works in html and js
+canvas-resize design in html and js
