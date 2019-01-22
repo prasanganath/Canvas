@@ -35,11 +35,16 @@ c.stroke();*/
 	c.stroke();
 
 } */
-c.beginPath();
-c.arc(200, 200, 30, 0, Math.PI * 2, false);
-c.strokeStyle = 'blue';
-c.stroke();
-
+var x = 200;
 function animate(){
 	requestAnimationFrame(animate);
+	c.clearRect(0, 0, innerWidth, innerHeight);
+	c.beginPath();
+	c.arc(x, 200, 30, 0, Math.PI * 2, false);
+	c.strokeStyle = 'blue';
+	c.stroke();
+	x +=1;
+
 }
+
+animate();
