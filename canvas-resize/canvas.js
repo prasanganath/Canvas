@@ -20,14 +20,16 @@ c.strokeStyle = "#fa34a3";
 c.stroke();
 
 //Arc / Circle
-c.beginPath();
+/*c.beginPath();
 c.arc(300, 300, 30, 0, Math.PI * 2, false);
 c.strokeStyle = 'blue';
-c.stroke();
+c.stroke();*/
 
 for (var i = 0; i < 3; i++) {
+	var x = Math.random() * window.innerWidth;
+	var y = Math.random() * window.innerHeight;
 	c.beginPath();
-	c.arc(300, 300, 30, 0, Math.PI * 2, false);
+	c.arc(x, y, 30, 0, Math.PI * 2, false);
 	c.strokeStyle = 'blue';
 	c.stroke();
 
