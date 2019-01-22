@@ -36,6 +36,7 @@ c.stroke();*/
 
 } */
 var x = 200;
+var dx = 4;
 function animate(){
 	requestAnimationFrame(animate);
 	c.clearRect(0, 0, innerWidth, innerHeight);
@@ -43,7 +44,12 @@ function animate(){
 	c.arc(x, 200, 30, 0, Math.PI * 2, false);
 	c.strokeStyle = 'blue';
 	c.stroke();
-	x +=1;
+
+	if (x > innerWidth) {
+		dx = -dx;
+	}
+
+	x +=dx;
 
 }
 
