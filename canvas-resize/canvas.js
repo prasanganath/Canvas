@@ -36,13 +36,15 @@ c.stroke();*/
 
 } */
 var x = 200;
+var y = 200;
 var dx = 4;
+var dy = 4;
 var radius = 30;
 function animate(){
 	requestAnimationFrame(animate);
 	c.clearRect(0, 0, innerWidth, innerHeight);
 	c.beginPath();
-	c.arc(x, 200, radius, 0, Math.PI * 2, false);
+	c.arc(x, y, radius, 0, Math.PI * 2, false);
 	c.strokeStyle = 'blue';
 	c.stroke();
 
@@ -51,6 +53,7 @@ function animate(){
 	}
 
 	x +=dx;
+	y +=dy;
 
 }
 
