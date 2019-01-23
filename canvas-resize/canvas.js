@@ -35,6 +35,18 @@ c.stroke();*/
 	c.stroke();
 
 } */
+
+function Circle(x, y) {
+	this.x = x;
+	this.y = y;
+
+	this.draw = function() {
+		c.beginPath();
+		c.arc(x, y, radius, 0, Math.PI * 2, false);
+		c.strokeStyle = 'blue';
+		c.stroke();
+	}
+}
 var x = Math.random() * innerWidth;
 var y = Math.random() * innerHeight;
 var dx = (Math.random() - 0.5) * 8;
